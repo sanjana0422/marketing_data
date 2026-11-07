@@ -1,0 +1,38 @@
+-- DDL: Create Table
+CREATE TABLE customers (
+  ID INT PRIMARY KEY,
+  Year_Birth INT,
+  Education VARCHAR(50),
+  Marital_Status VARCHAR(50),
+  Income FLOAT,
+  Country VARCHAR(50),
+  MntTotal FLOAT,
+  Response INT
+);
+
+-- DML: Load Data (example, load from CSV in MySQL)
+-- LOAD DATA INFILE 'data.csv' INTO TABLE customers
+-- FIELDS TERMINATED BY ',' IGNORE 1 ROWS;
+
+-- Analytical Query 1: Response by Education
+SELECT Education, AVG(Response)*100 AS response_rate
+FROM customers GROUP BY Education;
+
+-- Analytical Query 2: Response by Country
+SELECT Country, AVG(Response)*100 AS response_rate
+FROM customers GROUP BY Country;
+
+-- Analytical Query 3: Avg Spend by Age Band
+SELECT
+ CASE WHEN (2026-Year_Birth)<30 THEN 'Young <30'
+      WHEN (2026-Year_Birth)<45 THEN 'Middle 30-45'
+      WHEN (2026-Year_Birth)<60 THEN 'Mature 45-60'
+      ELSE 'Senior 60+' END AS AgeBand,
+ AVG(MntTotal) AS avg_spend
+FROM customers GROUP BY AgeBand;
+
+-- View for Dashboard
+CREATE VIEW vw_segment_summary AS
+SELECT Education, COUNT(*) AS customers,
+AVG(MntTotal) AS avg_spend, AVG(Response) AS response_rate
+FROM customers GROUP BY Education;
