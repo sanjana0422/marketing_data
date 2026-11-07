@@ -32,7 +32,8 @@ This project analyses customer profiles, spending patterns, and campaign respons
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-##5.dashboard screenshots
+
+###5.dashboard screenshots
 <img width="554" height="323" alt="m1" src="https://github.com/user-attachments/assets/483ee26b-39de-4658-9d29-aa2cef86f684" />
 <img width="522" height="334" alt="m2" src="https://github.com/user-attachments/assets/e906b049-1666-467d-b5b8-d5ff6f0eea63" />
 
