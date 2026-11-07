@@ -19,7 +19,7 @@ This project analyses customer profiles, spending patterns, and campaign respons
 - **Most Responsive by Country:** Response rate varies by country. The top country shows ~20% response rate, much higher than others. Campaigns should not be equal across all countries.
 - **Most Valuable by Age:** Mature (45-60) and Senior (60+) customers have the highest Average Spend.
 - **Segment-Level Summary:** High-spend segments are not always the highest responders. Value + Response must be used together for targeting.
-- 
+  
 ##dashboard screenshots
 
 <img width="554" height="323" alt="m1" src="https://github.com/user-attachments/assets/fca4af73-2441-4cf5-9fcd-afeb34533958" />
