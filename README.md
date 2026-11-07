@@ -19,6 +19,10 @@ This project analyses customer profiles, spending patterns, and campaign respons
 - **Most Responsive by Country:** Response rate varies by country. The top country shows ~20% response rate, much higher than others. Campaigns should not be equal across all countries.
 - **Most Valuable by Age:** Mature (45-60) and Senior (60+) customers have the highest Average Spend.
 - **Segment-Level Summary:** High-spend segments are not always the highest responders. Value + Response must be used together for targeting.
+- 
+##dashboard screenshots
+<img width="554" height="323" alt="m1" src="https://github.com/user-attachments/assets/fca4af73-2441-4cf5-9fcd-afeb34533958" />
+<img width="522" height="334" alt="m2" src="https://github.com/user-attachments/assets/1b1d308f-b34e-487e-a07d-ef2b0b72d51b" />
 
 
 ## 4. Setup Instructions
@@ -32,9 +36,6 @@ This project analyses customer profiles, spending patterns, and campaign respons
 pip install -r requirements.txt
 streamlit run app.py
 
-##dashboard screenshots
-<img width="554" height="323" alt="m1" src="https://github.com/user-attachments/assets/fca4af73-2441-4cf5-9fcd-afeb34533958" />
-<img width="522" height="334" alt="m2" src="https://github.com/user-attachments/assets/1b1d308f-b34e-487e-a07d-ef2b0b72d51b" />
 
 
 
